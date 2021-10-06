@@ -1,0 +1,57 @@
+// ----------------------------------------------------- //
+// --------------- App Component -- ---------------------//
+// ----------------------------------------------------- //
+.main {
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  height: 100%;
+}
+
+.search {
+  flex: 0 1 auto;
+}
+
+.list {
+  border: 1px solid grey;
+}
+
+section {
+  flex: 1;
+  height: 100%;
+  flex: 1 1 auto;
+}
+
+ul {
+  margin:0;
+  padding:0;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  border-bottom: 1px solid grey;
+
+  div {
+    width: 50%;
+    padding: 1rem;
+  }
+
+
+    @media only screen and (max-width: 650px){
+      flex-direction: column;
+      div {
+        width: 100%;
+      }
+  }
+}
+

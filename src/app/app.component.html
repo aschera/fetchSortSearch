@@ -1,0 +1,31 @@
+
+<div class="main">
+  <mat-toolbar class="search">
+    <h1>
+      Search :)
+    </h1>
+  </mat-toolbar>
+
+  <div class="wrapper">
+    <section class="list">
+      <ul>
+        <li class="movie" *ngFor="let i of data" (click)=select(i)>
+          <div class="desc">{{i.fields.title|| 'loading...'}}</div>
+          <div class="desc">{{i.fields.release_date || 'loading...'}}</div>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      info
+    </section>
+
+  </div>
+
+
+
+
+
+ </div>
+
+
