@@ -9,10 +9,10 @@ ul {
     justify-content: space-between;
     align-items: flex-start;
     align-content: flex-start;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid rgb(223, 223, 223);
 
     div {
-      padding: 1rem;
+      padding: .5rem;
     }
 
 
@@ -29,5 +29,5 @@ ul {
   }
 
   .movie-title {
-    width:50%
+    width:60%
   }

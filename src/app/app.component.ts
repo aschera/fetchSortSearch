@@ -9,6 +9,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class AppComponent {
   data: any | undefined;
+  selectedMovie:any| undefined;
 
   constructor(private http: HttpClient) {
   }
@@ -22,5 +23,9 @@ export class AppComponent {
     this.http.get(url).subscribe((res)=>{
       this.data = res
     })
+  }
+
+  selectedMovieEventHandler(valueEmitted: any) {
+    this.selectedMovie = valueEmitted;
   }
  }

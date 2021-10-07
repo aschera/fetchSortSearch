@@ -1,6 +1,22 @@
-<app-menubar></app-menubar>
+<div class="main">
 
-<app-movietable class="list" [data]="data">
-</app-movietable>
+  <app-menubar>
+  </app-menubar>
 
-<app-movieselection></app-movieselection>
+  <div class="wrapper">
+
+    <app-movietable
+    (movieSelected)="selectedMovieEventHandler($event)"
+    class="list"
+    [data]="data">
+    </app-movietable>
+
+    <app-movieselection
+    [selectedMovie]="selectedMovie"
+    class="description"
+    >
+    </app-movieselection>
+
+  </div>
+
+</div>

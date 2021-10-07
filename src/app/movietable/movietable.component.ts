@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-movietable',
@@ -6,10 +6,12 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./movietable.component.scss']
 })
 export class MovietableComponent implements OnInit {
-SelectedMovie: any;
 
   constructor() {
   }
+
+  @Output()
+  movieSelected: EventEmitter<any> = new EventEmitter<any>();
 
   @Input() data: any | undefined;
 
@@ -17,7 +19,7 @@ SelectedMovie: any;
   }
 
     select(i: any) {
-    this.SelectedMovie = i;
+    this.movieSelected.emit(i);
   }
 
 }

@@ -1,31 +1,26 @@
 
 
-<!--
-      <div *ngIf="!SelectedMovie" class="placeholder">
+      <div *ngIf="!selectedMovie" class="placeholder">
         <span>
           No movie selected.
         </span>
       </div>
 
-      <div *ngIf="SelectedMovie" class="movie-description">
+      <div *ngIf="selectedMovie" class="movie-description">
         <div class="">
           <h1>
-            {{SelectedMovie.fields.title || 'loading...'}}
+            {{selectedMovie.fields.title || 'loading...'}}
           </h1>
         </div>
         <div class="">
           <p>
-          {{SelectedMovie.fields.opening_crawl || 'loading...'}}
+          {{selectedMovie.fields.opening_crawl || 'loading...'}}
           </p>
         </div>
         <div class="">
           <p>
           Directed by:
-          {{SelectedMovie.fields.director || 'loading...'}}
+          {{selectedMovie.fields.director || 'loading...'}}
           </p>
         </div>
       </div>
-
-
-
--->
