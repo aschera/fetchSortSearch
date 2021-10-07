@@ -1,0 +1,17 @@
+.placeholder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    min-height:425px;
+  }
+
+  .movie-description {
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding:1rem;
+  }

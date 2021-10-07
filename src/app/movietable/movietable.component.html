@@ -1,0 +1,8 @@
+
+<ul>
+    <li class="movie" *ngFor="let i of data" (click)=select(i)>
+      <div class="movie-id">Episode {{i.fields.episode_id|| 'loading...'}}</div>
+      <div class="movie-title">{{i.fields.title|| 'loading...'}}</div>
+      <div class="novie-release">{{i.fields.release_date || 'loading...'}}</div>
+    </li>
+</ul>

@@ -1,0 +1,33 @@
+ul {
+    margin:0;
+    padding:0;
+  }
+
+  li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    border-bottom: 1px solid grey;
+
+    div {
+      padding: 1rem;
+    }
+
+
+      @media only screen and (max-width: 650px){
+        flex-direction: column;
+        div {
+          width: 100%;
+        }
+    }
+  }
+
+  .movie-id {
+    text-transform: uppercase;
+  }
+
+  .movie-title {
+    width:50%
+  }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -7,10 +8,9 @@ import { HttpClient } from "@angular/common/http";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Star wars movies';
-  data:any = []
-  constructor(private http: HttpClient) {
+  data: any | undefined;
 
+  constructor(private http: HttpClient) {
   }
 
   ngOnInit() {
@@ -23,9 +23,4 @@ export class AppComponent {
       this.data = res
     })
   }
-
-  select(i: any) {
-    console.log(i)
-  }
-
  }

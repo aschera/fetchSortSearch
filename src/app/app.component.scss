@@ -25,33 +25,10 @@
 section {
   flex: 1;
   height: 100%;
+  min-height:100vh;
+  width: 50%;
   flex: 1 1 auto;
 }
 
-ul {
-  margin:0;
-  padding:0;
-}
 
-li {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  align-content: flex-start;
-  border-bottom: 1px solid grey;
-
-  div {
-    width: 50%;
-    padding: 1rem;
-  }
-
-
-    @media only screen and (max-width: 650px){
-      flex-direction: column;
-      div {
-        width: 100%;
-      }
-  }
-}
 
