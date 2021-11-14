@@ -1,0 +1,96 @@
+
+mat-toolbar.search {
+    background: #f5f5f5;
+    color: rgba(0,0,0,.87);
+
+
+    .mat-form-field {
+      font-size: 1rem;
+  }
+
+  // hide floating label.
+  .mat-form-field-appearance-legacy.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
+    display: none;
+    opacity: 0;
+}
+
+// hide line under
+.mat-form-field-appearance-legacy .mat-form-field-underline {
+  display: none;
+    opacity: 0;
+}
+
+.mat-select-arrow-wrapper {
+  background-image: none;
+ }
+
+ .mat-select-arrow {
+   opacity: 0;
+ }
+
+
+.mat-form-field-type-mat-select .mat-form-field-label {
+  padding-left: 1rem;
+  width: 6rem;
+}
+
+.mat-form-field-type-mat-select {
+  width: 6rem;
+
+  .mat-form-field-infix {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+  }
+}
+
+
+  .mat-toolbar .mat-form-field-label,
+  .mat-toolbar .mat-focused .mat-form-field-label,
+  .mat-toolbar .mat-select-value,
+  .mat-toolbar .mat-select-arrow,
+  .mat-toolbar .mat-form-field.mat-focused .mat-select-arrow {
+    color: red;
+}
+
+  .mat-form-field-hide-placeholder .mat-select-placeholder {
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    transition: none;
+    display: block;
+  }
+  .mat-select-value {
+    display: table-cell;
+    max-width: 0;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+  .mat-option {
+      padding: 0;
+      margin: 0;
+      font-size: 12px;
+      line-height: 2rem;
+      height: 2rem;
+    }
+
+    .cdk-overlay-pane  {
+      position:absolute;
+      pointer-events:auto;
+      box-sizing:border-box;
+      z-index:1000;
+      display:flex;
+      max-width:100%;
+      max-height:100%;
+      transform:none !important;
+      margin-top:22px;
+    }
+
+    .mat-option-text {
+      display: inline-block;
+      flex-grow: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+  }
+}
